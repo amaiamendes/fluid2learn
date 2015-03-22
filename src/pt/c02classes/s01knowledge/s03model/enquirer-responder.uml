@@ -4,26 +4,99 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_p596wNAIEeSWF82LCvbsCg" name="EnquirerGeneric">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_dISGENAKEeSWF82LCvbsCg" name="responder" type="_kSqCENAKEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ab8XYNDVEeSWF82LCvbsCg" name="obj1" visibility="protected" type="_pkSicNDIEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fSrc0NDVEeSWF82LCvbsCg" name="obj2" visibility="protected" type="_pkSicNDIEeSWF82LCvbsCg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_2ZhLsNAIEeSWF82LCvbsCg" name="EnquirerAnimals">
     <generalization xmi:type="uml:Generalization" xmi:id="_PGrB8NAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N6bFoNDXEeSWF82LCvbsCg" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RaAx8NDXEeSWF82LCvbsCg" name="responder" type="_kSqCENAKEeSWF82LCvbsCg"/>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RKYmINAJEeSWF82LCvbsCg" name="EnquirerMaze">
     <generalization xmi:type="uml:Generalization" xmi:id="_pb_I0NAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dISGENAKEeSWF82LCvbsCg" name="responder" visibility="private" type="_kSqCENAKEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QJDyUNDVEeSWF82LCvbsCg" name="x" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ULJuwNDVEeSWF82LCvbsCg" name="y" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NHaJwNDWEeSWF82LCvbsCg" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hPPasNDWEeSWF82LCvbsCg" name="responder" type="_kSqCENAKEeSWF82LCvbsCg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7QaoINDXEeSWF82LCvbsCg" name="discover"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__ppSMNDXEeSWF82LCvbsCg" name="solve" visibility="private"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_WSvAANAJEeSWF82LCvbsCg" name="EnquirerMemory">
+  <packagedElement xmi:type="uml:Class" xmi:id="_WSvAANAJEeSWF82LCvbsCg" name="EnquirerForca">
     <generalization xmi:type="uml:Generalization" xmi:id="_qFYEENAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WTJEENDXEeSWF82LCvbsCg" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZLi0kNDXEeSWF82LCvbsCg" name="responder" type="_kSqCENAKEeSWF82LCvbsCg"/>
+    </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_ZTJdANAJEeSWF82LCvbsCg" name="ResponderGeneric"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZTJdANAJEeSWF82LCvbsCg" name="ResponderGeneric">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vdGv8NDIEeSWF82LCvbsCg" name="obj" visibility="protected" type="_pkSicNDIEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_APDqMNDJEeSWF82LCvbsCg" name="jaPerguntou" visibility="protected">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nqECgNCpEeSWF82LCvbsCg" name="ask">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2KBLgNDWEeSWF82LCvbsCg" name="question">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3kXQINC2EeSWF82LCvbsCg" name="scenario"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5y_D0NC2EeSWF82LCvbsCg" name="finalAnswer" concurrency="concurrent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-hKcoNDWEeSWF82LCvbsCg" name="answer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8QSzwNC2EeSWF82LCvbsCg" name="move">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BpjJ4NDXEeSWF82LCvbsCg" name="direction">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_bkNgsNAJEeSWF82LCvbsCg" name="ResponderAnimals">
     <generalization xmi:type="uml:Generalization" xmi:id="_qwsR8NAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iG3HkNDIEeSWF82LCvbsCg" name="animal" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y5aewNDIEeSWF82LCvbsCg" name="estatisticas" visibility="private" type="_2Hp8YNDIEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_704k8NDIEeSWF82LCvbsCg" name="questionCounter" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_byQjwNAJEeSWF82LCvbsCg" name="ResponderMaze">
     <generalization xmi:type="uml:Generalization" xmi:id="_rV3bkNAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FeHJANDJEeSWF82LCvbsCg" name="mazeMatrix" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TfagkNDJEeSWF82LCvbsCg" name="nLinhas" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_l0SmINDJEeSWF82LCvbsCg" name="nColunas" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pI7msNDJEeSWF82LCvbsCg" name="linhaAtual" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tDOSANDJEeSWF82LCvbsCg" name="colunaAtual" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_cDA8kNAJEeSWF82LCvbsCg" name="ResponderMemory">
+  <packagedElement xmi:type="uml:Class" xmi:id="_cDA8kNAJEeSWF82LCvbsCg" name="ResponderForca">
     <generalization xmi:type="uml:Generalization" xmi:id="_tsvzYNAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EGhqANDUEeSWF82LCvbsCg" name="chances" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IHp9INDUEeSWF82LCvbsCg" name="palavra" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NAhJgNDUEeSWF82LCvbsCg" name="letras" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_kSqCENAKEeSWF82LCvbsCg" name="IResponder"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pkSicNDIEeSWF82LCvbsCg" name="IObjetoConhecimento"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2Hp8YNDIEeSWF82LCvbsCg" name="IStatistics"/>
 </uml:Model>
