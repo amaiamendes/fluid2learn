@@ -2,7 +2,6 @@ package pt.c02classes.s01knowledge.s02app.actors;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 
 import pt.c02classes.s01knowledge.s01base.inter.IEnquirer;
@@ -26,11 +25,11 @@ public class EnquirerMaze implements IEnquirer {
 
         if (responder.finalAnswer("cheguei")) {
 
-            System.out.println("Você encontrou a saida!");
+            System.out.println("Vocï¿½ encontrou a saida!");
 
         } else {
 
-            System.out.println("Fuém fuém fuém!");
+            System.out.println("Fuï¿½m fuï¿½m fuï¿½m!");
         }
 
         return true;

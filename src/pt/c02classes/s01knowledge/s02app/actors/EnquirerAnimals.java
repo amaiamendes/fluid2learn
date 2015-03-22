@@ -1,4 +1,4 @@
-package pt.c01interfaces.s01knowledge.s02app.actors;
+package pt.c02classes.s01knowledge.s02app.actors;
 
 import pt.c01interfaces.s01knowledge.s01base.impl.BaseConhecimento;
 import pt.c01interfaces.s01knowledge.s01base.inter.IBaseConhecimento;
@@ -9,15 +9,10 @@ import pt.c01interfaces.s01knowledge.s01base.inter.IResponder;
 import java.util.Vector;
 import java.util.Collections;
 
-public class Enquirer implements IEnquirer
+public class EnquirerAnimals implements IEnquirer
 {
     IObjetoConhecimento obj1, obj2;
 	
-	public Enquirer()
-	{
-
-	}
-
 	
 	@Override
 	public void connect(IResponder responder)

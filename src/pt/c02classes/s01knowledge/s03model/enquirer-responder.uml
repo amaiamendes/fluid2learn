@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bhMeYNAIEeSWF82LCvbsCg" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bhMeYdAIEeSWF82LCvbsCg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_p596wNAIEeSWF82LCvbsCg" name="EnquirerGeneric">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dISGENAKEeSWF82LCvbsCg" name="responder" type="_kSqCENAKEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2ZhLsNAIEeSWF82LCvbsCg" name="EnquirerAnimals">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PGrB8NAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RKYmINAJEeSWF82LCvbsCg" name="EnquirerMaze">
+    <generalization xmi:type="uml:Generalization" xmi:id="_pb_I0NAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WSvAANAJEeSWF82LCvbsCg" name="EnquirerMemory">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qFYEENAJEeSWF82LCvbsCg" general="_p596wNAIEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZTJdANAJEeSWF82LCvbsCg" name="ResponderGeneric"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bkNgsNAJEeSWF82LCvbsCg" name="ResponderAnimals">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qwsR8NAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_byQjwNAJEeSWF82LCvbsCg" name="ResponderMaze">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rV3bkNAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cDA8kNAJEeSWF82LCvbsCg" name="ResponderMemory">
+    <generalization xmi:type="uml:Generalization" xmi:id="_tsvzYNAJEeSWF82LCvbsCg" general="_ZTJdANAJEeSWF82LCvbsCg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kSqCENAKEeSWF82LCvbsCg" name="IResponder"/>
+</uml:Model>
